@@ -35,11 +35,12 @@ public class App extends Application {
     public void start(Stage stage) {
 
 
-
-        Label label = new Label("Hello, JavaFX ");
-        Scene scene = new Scene(new StackPane(label), 640, 480);
+        MainView  mainView = new MainView();
+        Scene scene = new Scene(mainView, 640, 480);
         stage.setScene(scene);
         stage.show();
+
+        mainView.draw();
     }
 
     public static void main(String[] args) {
