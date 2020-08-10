@@ -4,5 +4,8 @@ Currently being worked on as an educational project.
 
 
 ##Example of game below
+
+
+
 ![alt tag](https://github.com/KiwiCode-s/JavaFxGameOfLifeSim/blob/master/ExampleImages/GifExample.gif)
 
