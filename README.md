@@ -3,7 +3,7 @@ Conway's Game of Life Made With Java and JavaFx.
 Currently being worked on as an educational project.
 
 
-## Example of game below
+### Example of game below
 
 
 
