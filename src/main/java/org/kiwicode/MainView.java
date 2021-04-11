@@ -36,9 +36,7 @@ public class MainView extends VBox {
 
 
     private Canvas canvas;
-
     private Simulation sim;
-
     private Affine affine;
     private int drawMode = Simulation.ALIVE;
 //    private Label keyLabel;
@@ -83,22 +81,14 @@ public class MainView extends VBox {
 
         try {
             Point2D simCoord = this.affine.inverseTransform(mouseX, mouseY);
-
             int simX = (int) simCoord.getX();
-
             int simY = (int) simCoord.getY();
-
             System.out.println(simX + ", " + simY);
-
             this.sim.setState(simX, simY, drawMode);
             draw();
-
-
         } catch (NonInvertibleTransformException e) {
             System.out.println("Could not invert transform");
             e.getStackTrace()[0].getLineNumber();
-
-
         }
 
     }
@@ -106,21 +96,16 @@ public class MainView extends VBox {
     public void draw() {
 
         GraphicsContext g = this.canvas.getGraphicsContext2D();
-
         g.setTransform(this.affine);
-
         g.setFill(Color.LIGHTGRAY);
         g.fillRect(0, 0, 450, 450);
-
         g.setFill(Color.BLACK);
         for (int x = 0; x < this.sim.width; x++) {
             for (int y = 0; y < this.sim.height; y++) {
                 if (this.sim.getState(x, y) == Simulation.ALIVE) {
                     g.fillRect(x, y, 1, 1);
                 }
-
             }
-
 
         }
         g.setStroke(Color.GRAY);

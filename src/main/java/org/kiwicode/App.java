@@ -40,7 +40,6 @@ public class App extends Application {
         Scene scene = new Scene(mainView, 640, 480);
         stage.setScene(scene);
         stage.show();
-
         mainView.draw();
     }
 
