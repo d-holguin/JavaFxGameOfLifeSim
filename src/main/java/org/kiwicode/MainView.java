@@ -39,7 +39,7 @@ public class MainView extends VBox {
     private Simulation sim;
     private Affine affine;
     private int drawMode = Simulation.ALIVE;
-//    private Label keyLabel;
+
 
     public MainView() {
 
