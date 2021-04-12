@@ -106,7 +106,6 @@ public class MainView extends VBox {
                     g.fillRect(x, y, 1, 1);
                 }
             }
-
         }
         g.setStroke(Color.GRAY);
         g.setLineWidth(0.05);
