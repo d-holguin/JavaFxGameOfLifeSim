@@ -50,6 +50,7 @@ public class Simulation {
             line += "|";
             System.out.println(line);
         }
+        
         System.out.println("----\n");
 
     }
